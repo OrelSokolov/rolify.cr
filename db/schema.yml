@@ -1,0 +1,87 @@
+---
+roles:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('roles_id_seq'::regclass)
+  - name: name
+    type: varchar
+    nullable: 'YES'
+    default:
+  - name: resource_type
+    type: varchar
+    nullable: 'YES'
+    default:
+  - name: resource_id
+    type: int8
+    nullable: 'YES'
+    default:
+  - name: created_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+  - name: updated_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+users:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('users_id_seq'::regclass)
+  - name: login
+    type: varchar
+    nullable: 'YES'
+    default:
+strict_users:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('strict_users_id_seq'::regclass)
+  - name: login
+    type: varchar
+    nullable: 'YES'
+    default:
+custom_users:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('custom_users_id_seq'::regclass)
+  - name: login
+    type: varchar
+    nullable: 'YES'
+    default:
+callback_users:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('callback_users_id_seq'::regclass)
+  - name: login
+    type: varchar
+    nullable: 'YES'
+    default:
+forums:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('forums_id_seq'::regclass)
+  - name: name
+    type: varchar
+    nullable: 'YES'
+    default:
+groups:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('groups_id_seq'::regclass)
+  - name: name
+    type: varchar
+    nullable: 'YES'
+    default:

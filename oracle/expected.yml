@@ -1,0 +1,59 @@
+add_global_role_returns_role	Role
+add_global_role_name	admin
+add_global_role_no_resource	true
+add_role_returns_existing	true
+role_count_admin	7
+role_count_god	2
+has_global_true	true
+has_global_false	false
+has_class_true	true
+has_class_false	false
+has_instance_true	true
+has_instance_false	false
+has_any_resource	true
+has_any_no_resource	true
+has_role_string_name	true
+has_all_true	true
+has_all_one_missing	false
+has_all_mixed_args	true
+has_any_true	true
+has_any_false	false
+only_has_true	true
+only_has_false	false
+roles_name	["moderator", "player"]
+new_record_has_role	false
+remove_global	false
+remove_instance	false
+remove_class_keeps_instance	[false, false]
+remove_returns_roles	["admin"]
+remove_missing_role	[]
+with_role_global	["admin"]
+with_role_class	["admin", "god"]
+with_role_instance	["admin", "god"]
+with_role_none	[]
+without_role_global	["god", "moderator", "r1", "r2", "r3", "r4", "r5", "solo"]
+without_role_class	["moderator", "r1", "r2", "r3", "r4", "r5", "solo"]
+with_all_roles	["god"]
+with_any_role	["admin"]
+with_any_role_sym_str	["admin"]
+scope_global	["admin", "solo", "staff"]
+scope_class_scoped	["manager:Group", "moderator:Forum", "player:Forum"]
+scope_class_scoped_type	["manager"]
+scope_instance_scoped	["anonymous:1", "moderator:2", "moderator:3"]
+scope_instance_scoped_type	["anonymous", "moderator"]
+scope_instance_scoped_obj	["moderator"]
+resource_find_roles	["moderator:Forum:", "moderator:Forum:3"]
+resource_find_roles_user	["player"]
+resource_with_role	["forum 1", "forum 2", "forum 3", "forum 3"]
+resource_with_role_user	["forum 1", "forum 2", "forum 3"]
+resource_without_role	[]
+resource_applied_roles_class	["moderator", "player"]
+resource_applied_roles_instance	["anonymous", "moderator", "player"]
+strict_class_role_instance_false	[true, false]
+strict_instance_role_class_false	[true, false]
+strict_with_role_scope	["s2"]
+strict_cached_role	[true, false]
+custom_join_add_and_has	[true, ["czar"]]
+custom_join_with_role	["cu1"]
+custom_join_remove_destroys_role	[false, false]
+rolify_assoc_callbacks	before_add:boss,after_add:boss,before_remove:boss,after_remove:boss false false
